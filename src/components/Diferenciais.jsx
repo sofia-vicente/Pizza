@@ -8,25 +8,25 @@ const listaDiferenciais = [
         id: 1,
         imagem: tomateImg,
         alt: "Tomate",
-        texto: "Igredientes frescos",
+        texto: "Ingredientes Frescos"
     },
     {
         id: 2,
         imagem: fogoImg,
         alt: "Fogo",
-        texto: "Forno a lenha",
+        texto: "Forno a lenha"
     },
     {
         id: 3,
         imagem: queijoImg,
         alt: "Queijo",
-        texto: "Mozzarela artesanal",
+        texto: "Mozzarela Artesanal"
     },
     {
         id: 4,
-        imagem: tomateImg,
+        imagem: relampagoImg,
         alt: "Relâmpago",
-        texto: "Delivery rápido",
+        texto: "Delivery Rápido"
     }
 ];
 
@@ -37,7 +37,7 @@ export default function Diferenciais(){
 
             <div className='cards'>
                 {listaDiferenciais.map((item)=>(
-                    <div className='card' key={item.id}>
+                    <div className="card" key={item.id}>
                         <img src={item.imagem} alt={item.alt} />
                         <p>{item.texto}</p>
                     </div>
